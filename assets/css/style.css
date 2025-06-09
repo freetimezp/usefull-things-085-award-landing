@@ -10,7 +10,8 @@ a {
     text-decoration: none;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -23,12 +24,21 @@ html, body {
     height: 100vh;
 }
 
+.website-content video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 4em; 
+    padding: 2em 4em;
     text-transform: uppercase;
     font-size: 1.2rem;
     line-height: 90%;
@@ -69,7 +79,6 @@ html, body {
     left: -20px;
     width: 100%;
     height: 150px;
-    background: #e5e3dc;
     margin: 0 auto;
 }
 
@@ -102,6 +111,7 @@ html, body {
     width: 100%;
     font-size: 1.8em;
     padding: 2em 6em;
+    color: orangered;
 }
 
 .pre-loader {
@@ -109,6 +119,8 @@ html, body {
     width: 100%;
     height: 100%;
     background: #0a0a0a;
+    background: url(../images/bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
     color: #e5e3dc;
     display: flex;
     justify-content: center;
@@ -116,17 +128,8 @@ html, body {
     z-index: 2;
 }
 
-.pre-loader-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .pre-loader-container .header {
-    position: relative;
     width: max-content;
-    margin: 0 auto;
 }
 
 .concat {
@@ -170,13 +173,13 @@ html, body {
 }
 
 .header-wrapper::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 20px;
     left: -20px;
     width: 100%;
     height: 120px;
-    background: #0a0a0a;
+    background: transparent;
     margin: 0 auto;
 }
 
@@ -194,17 +197,3 @@ html, body {
     top: 0;
     color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
