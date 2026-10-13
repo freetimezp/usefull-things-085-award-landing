@@ -3,6 +3,7 @@ const tl = gsap.timeline();
 function revealSite() {
     tl.to(".pre-loader", 1, {
         opacity: 0,
+        duration: 1,
         display: "none",
         ease: "power2.inOut",
     });
@@ -17,7 +18,7 @@ function revealSite() {
                 amount: 0.2,
             },
         },
-        "-=1.2"
+        "-=1.2",
     );
 
     tl.from(
@@ -31,7 +32,7 @@ function revealSite() {
                 amount: 0.2,
             },
         },
-        "-=1"
+        "-=1",
     );
 
     tl.to(".header > h1", 2, {
